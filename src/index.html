@@ -8,11 +8,17 @@
   <body>
     <div id="root"></div>
 
-    <form>
-      Por encriptar <input type="text" id="txtDecrypted"> 
-      <input type="submit" id="btnDecryted" value="Encriptar"> </br>
-      Encriptado <input type="text" id="txtEncrypted"> 
-      <input type="submit" id="btnEncrypted" value="Desencriptar"> </br>
+    <form id="formOffset">
+      Número de desplazamientos para encriptar o desencriptar <input type="number" id="txtOffset">
+      <input type="submit" id="btnOffset" value="Aceptar" onclick="offset()">
+    </form>
+    <form id="encriptar" style="display:none">
+      Por encriptar <input type="text" id="txtEncrypted"> 
+      <input type="submit" id="btnEncrypted" value="Encriptar" onclick="encode()">
+    </form>
+    <form id="desencriptar" style="display:none">
+      Encriptado <input type="text" id="txtDecryted"> 
+      <input type="submit" id="btnDecryted" value="Desencriptar" onclick="decode()">
     </form>
 
     <script src="cipher.js"></script>
