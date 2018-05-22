@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
 
-    <form id="formOffset">
-      Número de desplazamientos para encriptar o desencriptar <input type="number" id="txtOffset">
-      <input type="submit" id="btnOffset" value="Aceptar" onclick="offset()">
-    </form>
-    <form id="encriptar" style="display:none">
-      Por encriptar <input type="text" id="txtEncrypted"> 
+<head>
+  <meta charset="utf-8">
+  <title>Cesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+
+
+  <fieldset id="formOffset">
+    <label for="choose"> Número de desplazamientos para encriptar o desencriptar </label>
+    <input type="text" id="txtOffset">
+    <!-- <input type="submit" id="btnOffset" value="Aceptar"> -->
+  </fieldset>
+
+  <!-- style="display:none" Para este form-->
+  <section>
+
+  </section>
+  <fieldset id="encriptado">
+    <div>
+      Por encriptar
+      <input type="text" id="txtEncrypted">
       <input type="submit" id="btnEncrypted" value="Encriptar" onclick="encode()">
-    </form>
-    <form id="desencriptar" style="display:none">
-      Encriptado <input type="text" id="txtDecryted"> 
+    </div>
+    <div>
+      Encriptado
+      <input type="text" id="txtDecryted">
       <input type="submit" id="btnDecryted" value="Desencriptar" onclick="decode()">
-    </form>
+    </div>
+  </fieldset>
 
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
