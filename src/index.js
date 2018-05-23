@@ -1,6 +1,4 @@
 var encodeText, decodeText, offset;
-var encodeResult = '';
-var decodeResult = '';
 
 document.getElementById("btnEncrypted").addEventListener("click", function() {
   offset = document.getElementById("txtOffset").value;
