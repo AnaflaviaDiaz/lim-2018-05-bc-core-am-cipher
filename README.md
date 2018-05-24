@@ -1,3 +1,2 @@
 # Cifrado César
 
-## Preámbulo
