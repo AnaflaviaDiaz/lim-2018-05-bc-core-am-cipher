@@ -1,15 +1,19 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 div {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+textarea {
+    margin-top: 10px;
 }
-
-section {
-    margin-bottom: 40px;
-    margin-top: 40px;
+b {
+    margin: 20px;
 }
 
 .button {
@@ -18,21 +22,18 @@ section {
     color: white;
     font-size: 20px;
     padding: 15px 20px;
-    margin: 20px;
+    margin: 5px;
     cursor: pointer;
-}
-
-.input {
-    padding: 80px 80px;
-    margin: 20px;
 }
 
 #txtOffset {
     padding: 10px 5px;
 }
-
-b {
-    margin: 20px;
+#right {
+    float: right;
+}
+#left {
+    float: left;
 }
 
 /* abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ */

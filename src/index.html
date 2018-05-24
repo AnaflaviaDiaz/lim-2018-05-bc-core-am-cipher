@@ -18,16 +18,20 @@
 
   </section>
   <section id="encriptado">
-    <div>
-      <b>Por encriptar</b>
-      <input type="text" id="txtEncrypted" class="input">
+    <div id="left">
+      <b>Por encriptar</b> </br>
+      <textarea name="textEncrypted" id="txtEncrypted" cols="50" rows="10"></textarea> </br>
       <input type="submit" id="btnEncrypted" value="Encriptar" class="button">
     </div>
-    <div>
-      <b>Encriptado</b>
-      <input type="text" id="txtDecrypted" class="input">
+    <div id="rigth">
+      <b>Encriptado</b> </br>
+      <textarea name="textDecrypted" id="txtDecrypted" cols="50" rows="10"></textarea> </br>
       <input type="submit" id="btnDecrypted" value="Desencriptar" class="button">
     </div>
+  </section>
+
+  <section>
+    <button id="clear"> LIMPIAR</button>
   </section>
 
   <script src="cipher.js"></script>

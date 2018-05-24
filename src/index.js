@@ -11,3 +11,9 @@ document.getElementById("btnDecrypted").addEventListener("click", function() {
   decodeText = document.getElementById("txtDecrypted").value;
   cipher.decode(offset, decodeText);
 });
+
+document.getElementById("clear").addEventListener("click", function() {
+  document.getElementById("txtOffset").value = "";
+  document.getElementById("txtEncrypted").value = "";
+  document.getElementById("txtDecrypted").value = "";
+});
