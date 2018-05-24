@@ -8,28 +8,27 @@
 </head>
 
 <body>
-  <div id="root"></div>
 
-  <fieldset id="formOffset">
-    <label for="choose"> Número de desplazamientos para encriptar o desencriptar </label>
-    <input type="text" id="txtOffset">
-  </fieldset>
+  <section id="formOffset">
+    <label for="choose"><b>Número de desplazamientos para encriptar o desencriptar</b></label>
+    <input type="number" id="txtOffset">
+  </section>
 
   <section>
 
   </section>
-  <fieldset id="encriptado">
+  <section id="encriptado">
     <div>
-      Por encriptar
-      <input type="text" id="txtEncrypted">
-      <input type="submit" id="btnEncrypted" value="Encriptar">
+      <b>Por encriptar</b>
+      <input type="text" id="txtEncrypted" class="input">
+      <input type="submit" id="btnEncrypted" value="Encriptar" class="button">
     </div>
     <div>
-      Encriptado
-      <input type="text" id="txtDecrypted">
-      <input type="submit" id="btnDecrypted" value="Desencriptar">
+      <b>Encriptado</b>
+      <input type="text" id="txtDecrypted" class="input">
+      <input type="submit" id="btnDecrypted" value="Desencriptar" class="button">
     </div>
-  </fieldset>
+  </section>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>

@@ -18,8 +18,8 @@ function encode(offset, text) {
       encodeResult += String.fromCharCode((textChar));
     }
   }
-  // return encodeResult;
-  console.log(encodeResult);
+  return encodeResult;
+  // console.log(encodeResult);
 }
 
 function decode(offset, text) {
@@ -37,6 +37,6 @@ function decode(offset, text) {
       decodeResult += String.fromCharCode(textChar);
     }
   }
-  // return decodeResult;
-  console.log(decodeResult);
+  return decodeResult;
+  // console.log(decodeResult);
 }
