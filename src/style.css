@@ -12,9 +12,6 @@ div {
 textarea {
     margin-top: 10px;
 }
-b {
-    margin: 20px;
-}
 
 .button {
     border-radius: 8%;
@@ -28,12 +25,6 @@ b {
 
 #txtOffset {
     padding: 10px 5px;
-}
-#right {
-    float: right;
-}
-#left {
-    float: left;
 }
 
 /* abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ */
