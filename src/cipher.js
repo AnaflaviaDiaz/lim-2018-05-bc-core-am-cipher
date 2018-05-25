@@ -4,10 +4,20 @@ window.cipher = {
   createCipherWithOffset: createCipherWithOffset
 };
 
+/*  function alalalala(offset){
+  retun {
+    decode:function(offset,string){}
+    encode:function(offset,string){}
+  }
+} */
+
 function encode(offset, text) {
   var encodeResult = "";
+  // var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   for (let i = 0; i < text.length; i++) {
     var textChar = text.charCodeAt(i);
+
+    
     if (textChar >= 97 && textChar <= 122) {  //Minuscula
       // encodeResult += String.fromCharCode((textChar - 97 + offset) % 26 + 97);
       encodeResult += String.fromCharCode(textChar + offset % 26);
@@ -23,6 +33,7 @@ function encode(offset, text) {
 
 function decode(offset, text) {
   var decodeResult = "";
+  // var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   for (let i = 0; i < text.length; i++) {
     var textChar = text.charCodeAt(i);
     if (textChar >= 97 && textChar <= 122) {  //minuscula
