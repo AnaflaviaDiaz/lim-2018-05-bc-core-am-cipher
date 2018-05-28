@@ -1,7 +1,7 @@
 var encodeText, decodeText, offset;
 
 document.getElementById("btnEncrypted").addEventListener("click", function () {
-  offset = document.getElementById("txtOffset").value;
+  offset = parseInt(document.getElementById("txtOffset").value);
   encodeText = document.getElementById("txtEncrypted").value;
   if (offset) {
     if (encodeText) {
@@ -12,7 +12,7 @@ document.getElementById("btnEncrypted").addEventListener("click", function () {
 });
 
 document.getElementById("btnDecrypted").addEventListener("click", function () {
-  offset = document.getElementById("txtOffset").value;
+  offset = parseInt(document.getElementById("txtOffset").value);
   decodeText = document.getElementById("txtEncrypted").value;
   if (offset) {
     if (decodeText) {

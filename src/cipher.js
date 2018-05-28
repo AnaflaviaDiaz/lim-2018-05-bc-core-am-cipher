@@ -19,11 +19,11 @@ function encode(offset, text) {
     var charter = text.charAt(i);
     if (alphabet.includes(charter)) {
       if (textChar >= 97 && textChar <= 122) {  //Minuscula
-        // encodeResult += String.fromCharCode((textChar - 65 + offset) % 26 + 97);
-        encodeResult += String.fromCharCode(textChar + offset % 26);
+        encodeResult += String.fromCharCode((textChar - 97 + offset) % 26 + 97);
+        // encodeResult += String.fromCharCode(textChar + offset % 26);
       } else if (textChar >= 65 && textChar <= 90) {  //Mayuscula
-        // encodeResult += String.fromCharCode((textChar - 65 + offset) % 26 + 65);
-        encodeResult += String.fromCharCode(textChar + offset % 26);
+        encodeResult += String.fromCharCode((textChar - 65 + offset) % 26 + 65);
+        // encodeResult += String.fromCharCode(textChar + offset % 26);
       }
     } else encodeResult += String.fromCharCode((textChar));
   }
