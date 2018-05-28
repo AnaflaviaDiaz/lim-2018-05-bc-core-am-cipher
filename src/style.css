@@ -50,6 +50,12 @@ footer {
     cursor: pointer;
 }
 
+#answer {
+    border-color: #132FA2;
+    color: #132FA2;
+    background-color: #132FA2;
+}
+
 #txtOffset {
     padding: 10px 5px;
     background-color: white;
