@@ -15,7 +15,7 @@ window.cipher = {
           encodeResult += String.fromCharCode((textChar - 65 + offset) % 26 + 65);
         }
       }
-      else encodeResult += String.fromCharCode(textChar);
+      // else encodeResult += String.fromCharCode(textChar);
     }
 
     return encodeResult;
@@ -44,20 +44,16 @@ window.cipher = {
           else decodeResult += String.fromCharCode(textChar - offset % 26);
         }
       }
-      else decodeResult += String.fromCharCode(textChar);
+      // else decodeResult += String.fromCharCode(textChar);
     }
     return decodeResult;
   },
-  createCipherWithOffset() {
-    // let result = {
-    //   encode: () => {
-    //     return cipher.encode(offset, text);
-    //   },
-    //   decode: () => {
-    //     return cipher.decode(offset, text)
-    //   }
-    // }
-    // return result;
+  createCipherWithOffset(offset) {
+    let re = {
+      encode: cipher.encode(offset, "text"),
+      decoed: cipher.decode(offset, "text")
+    }
+    return re;
   }
 };
 
