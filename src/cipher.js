@@ -8,7 +8,7 @@ window.cipher = {
       let charter = text.charAt(i);
 
       if (alphabet.includes(charter)) {
-        if (textChar >= 97 && textChar <= 122 ) {
+        if (textChar >= 97 && textChar <= 122) {
           encodeResult += String.fromCharCode((textChar - 97 + offset) % 26 + 97);
         }
         else if (textChar >= 65 && textChar <= 90) {
@@ -49,14 +49,15 @@ window.cipher = {
     return decodeResult;
   },
   createCipherWithOffset() {
-    return {
-      encode(offset,text) {
-        return text;
-      },
-      decode(offset, text) {
-        return text;
-      }
-    }
+    // let result = {
+    //   encode: () => {
+    //     return cipher.encode(offset, text);
+    //   },
+    //   decode: () => {
+    //     return cipher.decode(offset, text)
+    //   }
+    // }
+    // return result;
   }
 };
 
