@@ -1,4 +1,4 @@
-let encodeText, decodeText, offset;
+let encodeText = "", decodeText = "", offset;
 
 document.getElementById("btnEncrypted").addEventListener("click", () => {
   offset = parseInt(document.getElementById("txtOffset").value);
