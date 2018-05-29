@@ -1,4 +1,4 @@
-let encodeText = "", decodeText = "", offset;
+let encodeText = "", decodeText = "", result ="", offset;
 
 document.getElementById("btnEncrypted").addEventListener("click", () => {
   offset = parseInt(document.getElementById("txtOffset").value);
@@ -24,6 +24,13 @@ document.getElementById("btnDecrypted").addEventListener("click", () => {
     else alert("No colocaste un texto para modificar");
   }
   else alert("No colocaste un número de desplazamientos para modificar el texto");
+});
+
+document.getElementById("change").addEventListener("click", () => {
+  result = document.getElementById("result").textContent;
+  document.getElementById("txtEncrypted").value = result;
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("answer").style.display = "none";
 });
 
 document.getElementById("clear").addEventListener("click", () => {
