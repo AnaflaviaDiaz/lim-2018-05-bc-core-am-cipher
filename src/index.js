@@ -1,4 +1,7 @@
-let encodeText = "", decodeText = "", result ="", offset;
+let encodeText = "",
+  decodeText = "",
+  result = "",
+  offset;
 
 document.getElementById("btnEncrypted").addEventListener("click", () => {
   offset = parseInt(document.getElementById("txtOffset").value);
@@ -7,10 +10,8 @@ document.getElementById("btnEncrypted").addEventListener("click", () => {
     if (encodeText) {
       document.getElementById("answer").style.display = "block";
       document.getElementById("result").innerHTML = cipher.encode(offset, encodeText);
-    }
-    else alert("No colocaste un texto para modificar");
-  }
-  else alert("No colocaste un número de desplazamientos para modificar el texto");
+    } else alert("No colocaste un texto para modificar");
+  } else alert("No colocaste un número de desplazamientos para modificar el texto");
 });
 
 document.getElementById("btnDecrypted").addEventListener("click", () => {
@@ -20,17 +21,19 @@ document.getElementById("btnDecrypted").addEventListener("click", () => {
     if (decodeText) {
       document.getElementById("answer").style.display = "block";
       document.getElementById("result").innerHTML = cipher.decode(offset, decodeText);
-    }
-    else alert("No colocaste un texto para modificar");
-  }
-  else alert("No colocaste un número de desplazamientos para modificar el texto");
+    } else alert("No colocaste un texto para modificar");
+  } else alert("No colocaste un número de desplazamientos para modificar el texto");
 });
 
 document.getElementById("change").addEventListener("click", () => {
   result = document.getElementById("result").textContent;
-  document.getElementById("txtEncrypted").value = result;
-  document.getElementById("result").innerHTML = "";
-  document.getElementById("answer").style.display = "none";
+  if (result != "") {
+    document.getElementById("txtEncrypted").value = result;
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("answer").style.display = "none";
+  } else {
+    console.log("vacio result");
+  }
 });
 
 document.getElementById("clear").addEventListener("click", () => {
