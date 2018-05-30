@@ -1,9 +1,12 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #455FD1;
+    background:
+        radial-gradient(
+            at center, #3047fa, #455FD1
+        );
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* height: 100%; */
 }
 section {
     text-align: center;
