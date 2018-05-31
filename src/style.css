@@ -7,7 +7,7 @@ body {
   background: -ms-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
   background: linear-gradient(to right, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b4e2', endColorstr='#538dad', GradientType=1);
-  /* background-image: url(http://demo.bonefishcode.com/acrux/template/dark-black-overlay/dark-slideshow-kenburn-audio/assets/img/bg/slideshow-02.jpg); */
+  background-image: url(http://demo.bonefishcode.com/acrux/template/dark-black-overlay/dark-slideshow-kenburn-audio/assets/img/bg/slideshow-02.jpg);
 }
 
 .container {
