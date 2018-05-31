@@ -14,36 +14,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="container text-center">
 
   <head>
     <div>
       <h1> Cifrado Cesar </h1>
     </div>
-
   </head>
 
-  <section id="formOffset">
-    <label for="choose">
-      <b>Número de desplazamientos para </b>
-      <br>
-      <b>Encriptar o Desencriptar</b>
-    </label>
+  <section>
     <div>
-      <input type="number" id="txtOffset" placeholder="#" required>
-      <button id="clear" class="button"><i class="fa fa-close"></i></button>
+      <input type="number" id="txtOffset" placeholder="#">
+    </div>
+    <div class="alert alert-danger" id="dangerOffset" style="display: none;">
+      <strong>Danger!</strong> No colocaste un número de desplazamientos para modificar el texto.
     </div>
   </section>
 
-  <section id="encriptado">
+  <section>
     <div>
-      <textarea name="textEncrypted" id="txtEncrypted" cols="45" rows="6" placeholder="Escribe tu texto aquí..." required></textarea>
+      <textarea name="textEncrypted" id="txtEncrypted" cols="45" rows="6" placeholder="Escribe tu texto aquí..."></textarea>
     </div>
+    <div class="alert alert-danger" id="dangerText" style="display: none;">
+      <strong>Danger!</strong> No colocaste un texto para modificar.
+    </div>
+  </section>
+
+  <section>
     <div>
-      <button id="btnEncrypted">Encriptar</button>
-      <button id="btnDecrypted">Desencriptar</button>
+      <button id="btnEncrypted" class="btn btn-lg btn-primary">Encriptar</button>
+      <button id="btnDecrypted" class="btn btn-primary btn-lg">Desencriptar</button>
       <!-- <button id="change" class="button"><i class="fa fa-refresh"></i></button> -->
-      <button id="change"><i class="fa fa-exchange"></i></button>
+      <button id="clear" class="btn btn-primary btn-lg"><i class="fa fa-close"></i></button>
+      <button id="change" class="btn btn-primary btn-lg"><i class="fa fa-exchange"></i></button>
     </div>
   </section>
 
