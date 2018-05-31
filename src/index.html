@@ -17,14 +17,12 @@
 <body class="container text-center">
 
   <head>
-    <div>
-      <h1> Cifrado Cesar </h1>
-    </div>
+    <h1 class="display-1"> Cifrado Cesar </h1>
   </head>
 
   <section>
     <div>
-      <input type="number" id="txtOffset" placeholder="#">
+      <input type="number" id="txtOffset" placeholder="#" class="text-justify">
     </div>
     <div class="alert alert-danger" id="dangerOffset" style="display: none;">
       <strong>Danger!</strong> No colocaste un número de desplazamientos para modificar el texto.
@@ -33,7 +31,7 @@
 
   <section>
     <div>
-      <textarea name="textEncrypted" id="txtEncrypted" cols="45" rows="6" placeholder="Escribe tu texto aquí..."></textarea>
+      <textarea name="textEncrypted" class="form-control" id="txtEncrypted" cols="40" rows="6" placeholder="Escribe tu texto aquí..."></textarea>
     </div>
     <div class="alert alert-danger" id="dangerText" style="display: none;">
       <strong>Danger!</strong> No colocaste un texto para modificar.
@@ -52,7 +50,7 @@
 
   <section id="answer" style="display: none">
     <b>Texto tranformado</b>
-    <h3 id="result"></h3>
+    <textarea name="textResult" class="form-control text-justify" id="result" cols="40" rows="6" readonly></textarea>
   </section>
 
   <script src="cipher.js"></script>
