@@ -1,15 +1,24 @@
 body {
-  background: rgba(33, 180, 226, 1);
-  background: -moz-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33, 180, 226, 1)), color-stop(50%, rgba(33, 180, 226, 1)), color-stop(51%, rgba(59, 180, 217, 1)), color-stop(100%, rgba(83, 141, 173, 1)));
-  background: -webkit-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
-  background: -o-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
-  background: -ms-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
-  background: linear-gradient(to right, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b4e2', endColorstr='#538dad', GradientType=1);
-  /* background-image: url(http://demo.bonefishcode.com/acrux/template/dark-black-overlay/dark-slideshow-kenburn-audio/assets/img/bg/slideshow-02.jpg); */
+  background-image: url(http://demo.bonefishcode.com/acrux/template/dark-black-overlay/dark-slideshow-kenburn-audio/assets/img/bg/slideshow-02.jpg);
 }
 
 .container {
-    color: #ffffff;
+  color: #ffffff;
+}
+.form-control {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 13rem;
+}
+
+#txtOffset {
+  margin-top: 1rem;
+}
+#answer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
