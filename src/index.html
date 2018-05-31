@@ -5,84 +5,53 @@
   <meta charset="utf-8">
   <title>Cesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Probando para bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
   <link rel="shortcut icon" type="image/jpg" href="../images/cipher.jpg" />
-  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
-  <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
-  <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="container text-center">
 
   <head>
-    <div>
-      <!-- <img src="../images/cipher.jpg" alt="cifrado" align="left"> -->
-      <h1> Cifrado Cesar </h1>
-    </div>
-
+    <h1 class="display-1"> Cifrado Cesar </h1>
   </head>
 
-  <section id="formOffset">
-    <label for="choose">
-      <b>Número de desplazamientos para </b>
-      <br>
-      <b>Encriptar o Desencriptar</b>
-    </label>
-    
-    <!-- TXTAREA -->
+  <section>
     <div>
-      <input type="number" id="txtOffset" placeholder="#" required>
+      <input type="number" id="txtOffset" placeholder="#" class="text-justify">
+    </div>
+    <div class="alert alert-danger" id="dangerOffset" style="display: none;">
+      <strong>Danger!</strong> No colocaste un número de desplazamientos para modificar el texto.
     </div>
   </section>
 
-  <section id="encriptado">
+  <section>
     <div>
-      <textarea name="textEncrypted" id="txtEncrypted" cols="45" rows="6" placeholder="Escribe tu texto aquí..." required></textarea>
+      <textarea name="textEncrypted" class="form-control" id="txtEncrypted" cols="40" rows="6" placeholder="Escribe tu texto aquí..."></textarea>
     </div>
+    <div class="alert alert-danger" id="dangerText" style="display: none;">
+      <strong>Danger!</strong> No colocaste un texto para modificar.
+    </div>
+  </section>
+
+  <section>
     <div>
-      <input type="submit" id="btnEncrypted" value="Encriptar" class="button">
-      <button id="change" class="button"><i class="fa fa-exchange"></i></button>
-      <input type="submit" id="btnDecrypted" value="Desencriptar" class="button">
+      <button id="btnEncrypted" class="btn btn-lg btn-primary">Encriptar</button>
+      <button id="btnDecrypted" class="btn btn-primary btn-lg">Desencriptar</button>
       <!-- <button id="change" class="button"><i class="fa fa-refresh"></i></button> -->
+      <button id="clear" class="btn btn-primary btn-lg"><i class="fa fa-close"></i></button>
+      <button id="change" class="btn btn-primary btn-lg"><i class="fa fa-exchange"></i></button>
     </div>
   </section>
 
   <section id="answer" style="display: none">
     <b>Texto tranformado</b>
-    <h3 id="result"></h3>
+    <textarea name="textResult" class="form-control text-justify" id="result" cols="40" rows="6" readonly></textarea>
   </section>
-
-  <footer class="bigpixi-footer-social">
-    <ul>
-      <li class="bigpixi-footer-social__list-item">
-        <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://twitter.com/Anaflavia57">
-          <img class="bigpixi-footer-social__icon" alt="Twitter" title="Twitter" src="http://simpleicons.org/icons/twitter.svg">
-        </a>
-      </li>
-      <li class="bigpixi-footer-social__list-item">
-        <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.facebook.com/anaflaviadmar">
-          <img class="bigpixi-footer-social__icon" alt="Facebook" title="Facebook" src="http://simpleicons.org/icons/facebook.svg">
-        </a>
-      </li>
-      <li class="bigpixi-footer-social__list-item">
-        <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.youtube.com/channel/UCaOadmUf0bFw3jBJX4N8GsA?view_as=subscriber">
-          <img class="bigpixi-footer-social__icon" alt="YouTube" title="YouTube" src="http://simpleicons.org/icons/youtube.svg">
-        </a>
-      </li>
-      <li class="bigpixi-footer-social__list-item">
-        <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.instagram.com/fafudmar/">
-          <img class="bigpixi-footer-social__icon" alt="Instagram" title="Instagram" src="http://simpleicons.org/icons/instagram.svg">
-        </a>
-      </li>
-      <li class="bigpixi-footer-social__list-item">
-        <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.pinterest.com/">
-          <img class="bigpixi-footer-social__icon" alt="Pinterest" title="Pinterest" src="http://simpleicons.org/icons/pinterest.svg">
-        </a>
-      </li>
-    </ul>
-  </footer>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>

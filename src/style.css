@@ -1,96 +1,15 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background:
-        radial-gradient(
-            at center, #3047fa, #455FD1
-        );
-    display: flex;
-    flex-direction: column;
-    /* height: 100%; */
-}
-section {
-    text-align: center;
-}
-div {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-textarea {
-    background-color: #FFFF;
-    text-decoration-style: dashed;
-}
-h1, b, h3 {
-    color: white;
-    text-align: center;
-}
-img {
-    /* width: 150px;
-    height: 150px; */
-    border-radius: 70%;
-    /* box-align: right; */
-}
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #324CC0;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    min-height:50px;
-    padding:5px 0px;
-    height: 20px;
+  background: rgba(33, 180, 226, 1);
+  background: -moz-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33, 180, 226, 1)), color-stop(50%, rgba(33, 180, 226, 1)), color-stop(51%, rgba(59, 180, 217, 1)), color-stop(100%, rgba(83, 141, 173, 1)));
+  background: -webkit-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
+  background: -o-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
+  background: linear-gradient(to right, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 50%, rgba(59, 180, 217, 1) 51%, rgba(83, 141, 173, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b4e2', endColorstr='#538dad', GradientType=1);
+  /* background-image: url(http://demo.bonefishcode.com/acrux/template/dark-black-overlay/dark-slideshow-kenburn-audio/assets/img/bg/slideshow-02.jpg); */
 }
 
-.button {
-    border-radius: 8%;
-    background-color: #132FA2;
-    color: white;
-    font-size: 20px;
-    padding: 8px 15px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-#answer {
-    background-color: #132FA2;
-    margin-bottom: 100px;
-}
-
-#txtOffset {
-    padding: 10px 5px;
-    background-color: white;
-}
-
-/* Social-Links del footer */
-.bigpixi-footer-social {
-    margin-left: auto;
-    margin-top: 8px;
-}
-.bigpixi-footer-social__list-item {
-    display: inline-block;
-    margin-left: 16px;
-}
-.bigpixi-footer__icon-link {
-    display: inline-block;
-    -webkit-transition: 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
-    transition: 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
-    -webkit-transition-property: opacity, -webkit-transform;
-    transition-property: opacity, -webkit-transform;
-    transition-property: opacity, transform;
-    transition-property: opacity, transform, -webkit-transform;
-}
-.bigpixi-footer-social__icon {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-}
-.bigpixi-footer-social__icon:hover {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    border: 1px solid #e2e2e2;
-    padding: 2px;
-    transition : .2s;
+.container {
+    color: #ffffff;
 }
