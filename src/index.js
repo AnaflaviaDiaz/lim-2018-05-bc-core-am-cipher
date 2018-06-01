@@ -1,6 +1,5 @@
 let encodeText = "",
   decodeText = "",
-  result = "",
   offset;
 
 document.getElementById("btnEncrypted").addEventListener("click", () => {
@@ -47,7 +46,6 @@ document.getElementById("btnDecrypted").addEventListener("click", () => {
 }); */
 
 document.getElementById("clear").addEventListener("click", () => {
-  console.log('voy a borrar');
   document.getElementById("dangerOffset").style.display = "none";
   document.getElementById("dangerText").style.display = "none";
   document.getElementById("txtOffset").value = "";
