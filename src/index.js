@@ -37,16 +37,17 @@ document.getElementById("btnDecrypted").addEventListener("click", () => {
   }
 });
 
-document.getElementById("change").addEventListener("click", () => {
+/* document.getElementById("change").addEventListener("click", () => {
   result = document.getElementById("result").textContent;
   if (result != "") {
     document.getElementById("txtEncrypted").value = result;
     document.getElementById("result").innerHTML = "";
     document.getElementById("answer").style.display = "none";
   }
-});
+}); */
 
 document.getElementById("clear").addEventListener("click", () => {
+  console.log('voy a borrar');
   document.getElementById("dangerOffset").style.display = "none";
   document.getElementById("dangerText").style.display = "none";
   document.getElementById("txtOffset").value = "";

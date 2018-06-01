@@ -1,26 +1,50 @@
 body {
+  width: 100%;
+  /* opacity: 0.1 !important; */
   background-image: url(http://demo.bonefishcode.com/acrux/template/dark-black-overlay/dark-slideshow-kenburn-audio/assets/img/bg/slideshow-02.jpg);
+}
+textarea {
+  font-family: "Arial" !important;
+  line-height: 2;
+}
+h1 {
+  font-size: 7vw !important;
 }
 
 .container {
   color: #ffffff;
 }
 .form-control {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+.alert-danger{
+  background: rgba(152, 152, 103, 0.3) !important;
+  color: red;
 }
 .btn {
   margin-right: 2rem;
   margin-left: 2rem;
   width: 13rem;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 1px solid white !important;
 }
-/* .footer-copyright {
-  bottom: 0;
-  position: fixed;
-} */
 
+#clear {
+  width: 3rem;
+  margin-top: 0;
+}
 #txtOffset {
   margin-top: 1rem;
+  margin-bottom: 10px;
+  line-height: 2;
+  color: #555555;
+  position: relative;
+  font-family: "Arial" !important;
+  line-height: 2.5;
+  width: 20%;
 }
 #answer {
   margin-top: 2rem;

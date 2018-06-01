@@ -6,7 +6,8 @@
   <title>Cesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Probando para bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
 
   <link rel="shortcut icon" type="image/jpg" href="../images/cipher.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,45 +18,44 @@
 <body class="container text-center">
 
   <head>
-    <h1 class="display-1"> Cifrado Cesar </h1>
+    <h1 class=""> CIFRADO CESAR </h1>
   </head>
 
   <section>
     <div>
-      <input type="number" id="txtOffset" placeholder="#" class="text-justify">
+      <input type="number" id="txtOffset" placeholder="Número de desplazamiento" class="text-justify">
+      <button id="clear" class="btn btn-lg">
+        <i class="fa fa-close"></i>
+      </button>
     </div>
-    <div class="alert alert-danger" id="dangerOffset" style="display: none;">
-      <strong>Danger!</strong> No colocaste un número de desplazamientos para modificar el texto.
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <textarea name="textEncrypted" class="form-control" id="txtEncrypted" cols="40" rows="4" placeholder="Escribe tu texto aquí..."></textarea>
-    </div>
-    <div class="alert alert-danger" id="dangerText" style="display: none;">
-      <strong>Danger!</strong> No colocaste un texto para modificar.
+    <div class="alert" id="dangerOffset" style="display: none;" role="alert">
+      <strong>Danger!</strong>
+      <b>No colocaste un número de desplazamientos para modificar el texto.</b>
     </div>
   </section>
 
   <section>
     <div>
-      <button id="btnEncrypted" class="btn btn-lg btn-primary">Encriptar</button>
-      <button id="change" class="btn btn-primary btn-lg"><i class="fa fa-exchange"></i></button>
-      <button id="btnDecrypted" class="btn btn-primary btn-lg">Desencriptar</button>
-      <!-- <button id="change" class="button"><i class="fa fa-refresh"></i></button> -->
-      <button id="clear" class="btn btn-primary btn-lg"><i class="fa fa-close"></i></button>
+      <textarea name="textEncrypted" class="form-control" id="txtEncrypted" cols="40" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
     </div>
+    <div class="alert" id="dangerText" style="display: none;" role="alert">
+      <strong>Danger!</strong>
+      <b>No colocaste un texto para modificar.</b>
+    </div>
+  </section>
+
+  <section>
+    <button id="btnEncrypted" class="btn btn-lg">Cifrar</button>
+    <!-- <button id="change" class="btn btn-lg">
+      <i class="fa fa-refresh"></i>
+    </button> -->
+    <button id="btnDecrypted" class="btn btn-lg">Descifrar</button>
   </section>
 
   <section id="answer" style="display: none">
     <h4>Texto tranformado</h4>
     <textarea name="textResult" class="form-control text-justify" id="result" cols="40" rows="4" readonly></textarea>
   </section>
-
-  <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-  </div> -->
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
