@@ -14,10 +14,10 @@ body {
   margin-left: 2rem;
   width: 13rem;
 }
-.footer-copyright {
+/* .footer-copyright {
   bottom: 0;
   position: fixed;
-}
+} */
 
 #txtOffset {
   margin-top: 1rem;
