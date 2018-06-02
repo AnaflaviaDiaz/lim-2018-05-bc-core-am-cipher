@@ -4,10 +4,13 @@ body {
   color: #f5f6f7;
   background-color: #dcf8c6 !important;
 }
+textarea {
+  /* width: 50% !important; */
+  margin: 20px 0px !important;
+}
 .block-1 {
   display: block !important;
 }
-
 .bg-2 {
   background-color: #075e54;
   color: #ffffff;
@@ -16,9 +19,19 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#form {
-  background: rgba(0, 0, 0, 0.3);
+.btn {
+  background: #075e54 !important;
 }
+#clear {
+  margin-top: 20px !important;
+  margin-left: -10px;
+}
+.btn-lg {
+  width: 100% !important;
+}
+/* .col-md-5 {
+  width: 50%;
+} */
 /* .recuadro {
   background: rgba(0, 0, 0, 0.3);
   font-family: "Arial" !important;

@@ -28,46 +28,57 @@
   </section>
 
   <!-- Contenedora de todo lo anterior-->
-  <section class="container-fluid text-center">
-    <!-- IMPORTANTE-->
-    <section>
-      <div>
-        <input type="number" id="txtOffset" placeholder="Número de desplazamiento" class="text-justify" value="5">
-        <button id="clear">
-          <i class="fa fa-close"></i>
-        </button>
-      </div>
-      <div id="dangerOffset" style="display: none;" role="alert">
-        <strong>Danger!</strong>
-        <b>No colocaste un número de desplazamientos para modificar el texto.</b>
-      </div>
-    </section>
+  <section class="container-fluid text-center" id="form">
 
-    <!-- IMPORTANTE-->
-    <section>
-      <div>
-        <textarea name="textEncrypted" class="text-justify" id="txtEncrypted" cols="40" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-      </div>
-      <div id="dangerText" style="display: none;" role="alert">
-        <strong>Danger!</strong>
-        <b>No colocaste un texto para modificar.</b>
-      </div>
-    </section>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <section>
+          <div>
+            <input type="number" id="txtOffset" placeholder="Número de desplazamiento" class="text-justify" value="5">
+          </div>
+          <div id="dangerOffset" style="display: none;">
+            <strong>Danger!</strong>
+            <b>No colocaste un número de desplazamientos para modificar el texto.</b>
+          </div>
+        </section>
 
-    <!-- IMPORTANTE-->
-    <section>
-      <button id="btnEncrypted">Cifrar</button>
-      <!-- <button id="change" class="btn btn-lg">
-        <i class="fa fa-refresh"></i>
-      </button> -->
-      <button id="btnDecrypted">Descifrar</button>
-    </section>
+        <section>
+          <div>
+            <div class="col-md-11">
+              <textarea name="textEncrypted" class="text-justify form-control" id="txtEncrypted" autofocus cols="40" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <div class="col-md-1">
+              <button id="clear" class="btn btn-success">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+          </div>
+          <div id="dangerText" style="display: none;">
+            <strong>Danger!</strong>
+            <b>No colocaste un texto para modificar.</b>
+          </div>
+        </section>
 
-    <!-- IMPORTANTE-->
-    <section id="answer" style="display: none">
-      <h4>Texto tranformado</h4>
-      <textarea name="textResult" class="text-justify" id="result" cols="40" rows="4" readonly></textarea>
-    </section>
+        <section>
+          <div class="col-md-6">
+            <button id="btnEncrypted" class="btn btn-success btn-lg">Cifrar</button>
+          </div>
+          <div class="col-md-6">
+            <button id="btnDecrypted" class="btn btn-success btn-lg">Descifrar</button>
+          </div>
+          <!-- <button id="change" class="btn btn-lg">
+				  <i class="fa fa-refresh"></i>
+				</button> -->
+        </section>
+      </div>
+      <div class="form-group col-md-6">
+        <section id="answer" style="display: none">
+          <h4>Texto tranformado</h4>
+          <textarea name="textResult" class="text-justify form-control" id="result" cols="40" rows="4" readonly></textarea>
+        </section>
+      </div>
+    </div>
+
   </section>
 
   <script src="cipher.js"></script>
