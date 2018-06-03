@@ -9,7 +9,7 @@ document.getElementById("btnEncrypted").addEventListener("click", () => {
     document.getElementById("dangerOffset").style.display = "none";
     if (encodeText) {
       document.getElementById("dangerText").style.display = "none";
-      document.getElementById("answer").style.display = "block";
+      // document.getElementById("answer").style.display = "block";
       document.getElementById("result").innerHTML = cipher.encode(offset, encodeText);
     } else {
       document.getElementById("dangerText").style.display = "block";
@@ -26,7 +26,7 @@ document.getElementById("btnDecrypted").addEventListener("click", () => {
     document.getElementById("dangerOffset").style.display = "none";
     if (decodeText) {
       document.getElementById("dangerText").style.display = "none";
-      document.getElementById("answer").style.display = "block";
+      // document.getElementById("answer").style.display = "block";
       document.getElementById("result").innerHTML = cipher.decode(offset, decodeText);
     } else {
       document.getElementById("dangerText").style.display = "block";
@@ -51,5 +51,5 @@ document.getElementById("clear").addEventListener("click", () => {
   document.getElementById("txtOffset").value = "";
   document.getElementById("txtEncrypted").value = "";
   document.getElementById("result").innerHTML = "";
-  document.getElementById("answer").style.display = "none";
+  // document.getElementById("answer").style.display = "none";
 });

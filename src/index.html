@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="shortcut icon" type="image/jpg" href="../images/cipher.jpg" />
-  <!-- IMPORTANTE-->
 </head>
 
 <body class="text-center">
@@ -36,7 +35,7 @@
           <div>
             <input type="number" id="txtOffset" placeholder="Número de desplazamiento" class="text-justify" value="5">
           </div>
-          <div id="dangerOffset" style="display: none;">
+          <div id="dangerOffset" style="display: none;" class="alert1">
             <strong>Danger!</strong>
             <b>No colocaste un número de desplazamientos para modificar el texto.</b>
           </div>
@@ -53,7 +52,7 @@
               </button>
             </div>
           </div>
-          <div id="dangerText" style="display: none;">
+          <div id="dangerText" style="display: none;" class="col-md-12 alert2">
             <strong>Danger!</strong>
             <b>No colocaste un texto para modificar.</b>
           </div>
@@ -67,13 +66,13 @@
             <button id="btnDecrypted" class="btn btn-success btn-lg">Descifrar</button>
           </div>
           <!-- <button id="change" class="btn btn-lg">
-				  <i class="fa fa-refresh"></i>
-				</button> -->
+            <i class="fa fa-refresh"></i>
+          </button> -->
         </section>
       </div>
       <div class="form-group col-md-6">
-        <section id="answer" style="display: none">
-          <h4>Texto tranformado</h4>
+        <section id="answer">
+          <h4 class="white">Texto transformado</h4>
           <textarea name="textResult" class="text-justify form-control" id="result" cols="40" rows="4" readonly></textarea>
         </section>
       </div>

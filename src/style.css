@@ -5,8 +5,11 @@ body {
   background-color: #dcf8c6 !important;
 }
 textarea {
-  /* width: 50% !important; */
   margin: 20px 0px !important;
+}
+.white {
+  color: #075e54 !important;
+  font-size: bold !important;
 }
 .block-1 {
   display: block !important;
@@ -29,63 +32,9 @@ textarea {
 .btn-lg {
   width: 100% !important;
 }
-/* .col-md-5 {
-  width: 50%;
-} */
-/* .recuadro {
-  background: rgba(0, 0, 0, 0.3);
-  font-family: "Arial" !important;
-  line-height: 3;
-  font-size: 1.2vw !important;
-  margin-right: 15%;
-  margin-left: 15%;
-} */
-
-/*
-textarea {
-  font-family: "Arial" !important;
-  line-height: 2;
-}
-h1 {
-  font-size: 7vw !important;
-}
-
-.container {
-  color: #ffffff;
-}
-.form-control {
-  margin-top: 1rem;
-  margin-bottom: 10px;
-}
-.alert-danger{
-  background: rgba(152, 152, 103, 0.3) !important;
-  color: red;
-}
-.btn {
-  margin-right: 2rem;
-  margin-left: 2rem;
-  width: 13rem;
+.alert1 {
   margin-top: 20px;
-  background: rgba(0, 0, 0, 0.1);
-  color: white;
-  border: 1px solid white !important;
 }
-
-#clear {
-  width: 3rem;
-  margin-top: 0;
+.alert2 {
+  margin-bottom: 20px;
 }
-#txtOffset {
-  margin-top: 1rem;
-  margin-bottom: 10px;
-  line-height: 2;
-  color: #555555;
-  position: relative;
-  font-family: "Arial" !important;
-  line-height: 2.5;
-  width: 20%;
-}
-#answer {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-} */
