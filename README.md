@@ -6,4 +6,6 @@
 
 Ahora puedes proteger tus mensajes con [WhatsApp Cipher](https://anaflaviadiaz.github.io/lim-2018-05-bc-core-am-cipher/src/), una aplicación que permite cifrar o descifrar un mensaje, lo que volverá más difícil espiar tus mensajes.
 
-Entra aquí: https://anaflaviadiaz.github.io/lim-2018-05-bc-core-am-cipher/src/
+Solo tienes que poner un texto que quieras cifrar o descifrar y verás el texto cambiado. Ahora podrás compartir tus mensajes con las personas que quieras sin que se enteren los demás.
+
+Entra aquí: https://anaflaviadiaz.github.io/lim-2018-05-bc-core-am-cipher/src/ y prueba la app.
