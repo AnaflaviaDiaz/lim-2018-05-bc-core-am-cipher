@@ -4,8 +4,8 @@ body {
   color: #f5f6f7;
   background-color: #dcf8c6 !important;
 }
-textarea {
-  margin: 20px 0px !important;
+#txtEncrypted {
+  margin: 14px 0px !important;
 }
 .white {
   color: #075e54 !important;
@@ -26,7 +26,7 @@ textarea {
   background: #075e54 !important;
 }
 #clear {
-  margin-top: 20px !important;
+  margin-top: 16px !important;
   margin-left: -10px;
 }
 .btn-lg {
@@ -40,4 +40,8 @@ textarea {
 }
 #txtOffset {
   width: 50%;
+}
+::selection {
+  background: #0a8576;
+  color: #f5f6f7;
 }

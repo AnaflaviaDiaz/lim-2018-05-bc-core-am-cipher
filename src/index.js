@@ -45,6 +45,16 @@ document.getElementById("btnDecrypted").addEventListener("click", () => {
   }
 }); */
 
+document.getElementById("copy").addEventListener("click", () => {
+  let aux = document.createElement("input");
+  aux.setAttribute("value", document.getElementById("result").innerHTML);
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+  document.getElementById("result").select();
+})
+
 document.getElementById("clear").addEventListener("click", () => {
   document.getElementById("dangerOffset").style.display = "none";
   document.getElementById("dangerText").style.display = "none";
