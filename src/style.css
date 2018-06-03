@@ -38,3 +38,6 @@ textarea {
 .alert2 {
   margin-bottom: 20px;
 }
+#txtOffset {
+  width: 50%;
+}
