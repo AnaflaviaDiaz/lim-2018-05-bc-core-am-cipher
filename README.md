@@ -12,27 +12,21 @@ Entra aquí: [WhatsApp Cipher](https://anaflaviadiaz.github.io/lim-2018-05-bc-co
 
 ## Cómo lo usas?
 
-####1.
-
+1.
 Debes ingresar un número de desplazamiento, por defecto aparece el número 5 pero puedes modificarlo a tu conveniencia.
 
-####2.
-
+2.
 Debes ingresar el texto que quieras cifrar o el texto que te mandaron para decifrar.
 
-####3.
-
+3.
 En el caso que quieras Cifrar el texto(ocultar el contenido de tu texto actual) apretas el botón para "CIFRAR" y tu resultado se mostrará a la derecha.
 
-####4.
-
+4.
 En el caso que quieras Descifrar el texto(hacer entendible el contenido del texto que te mandaron) apretas el botón para "DESCIFRAR" y tu resultado se mostrará a la derecha.
 
-####5.
-
+5.
 Puedes copiar el resultado que obtuviste.
 
-####6.
 
 ## Quién puede utilizarlo?
 
