@@ -1,53 +1,62 @@
-let encodeText = "",
-  decodeText = "",
-  offset;
+const btnEncryted = document.getElementById('btn-encrypted');
+const btnDecrypted = document.getElementById('btn-decrypted');
+const txtOffset = document.getElementById('txt-offset');
+const helperOffset = document.getElementById('danger-offset');
+const txtToEncrypt = document.getElementById('txt-to-encrypt');
+const helperText = document.getElementById('danger-text');
+const txtResult = document.getElementById('txt-result');
+const btnClear = document.getElementById('btn-clear');
+const btnCopy = document.getElementById('btn-copy');
 
-document.getElementById("btn-encrypted").addEventListener("click", () => {
-  offset = parseInt(document.getElementById("txt-offset").value);
-  encodeText = document.getElementById("txt-encrypted").value;
-  if (offset) {
-    document.getElementById("danger-offset").style.display = "none";
-    if (encodeText) {
-      document.getElementById("danger-text").style.display = "none";
-      document.getElementById("result").innerHTML = cipher.encode(offset, encodeText);
-    } else {
-      document.getElementById("danger-text").style.display = "block";
-    }
+const verifiedOffset = (offset) => {
+  if (!offset) {
+    helperOffset.style.display = 'block';
+    return false;
   } else {
-    document.getElementById("danger-offset").style.display = "block";
+    helperOffset.style.display = 'none';
+    return true;
   }
+}
+
+const verifiedText = (text) => {
+  if (text) {
+    helperText.style.display = 'none';
+    return true;
+  } else {
+    helperText.style.display = 'block';
+    return false;
+  }
+}
+
+btnEncryted.addEventListener('click', () => {
+  const offset = parseInt(txtOffset.value);
+  const text = txtToEncrypt.value;
+  const haveOffset = verifiedOffset(offset);
+  const haveText = verifiedText(text);
+  if (haveOffset && haveText) txtResult.innerHTML = cipher.encode(offset, text);
 });
 
-document.getElementById("btn-decrypted").addEventListener("click", () => {
-  offset = parseInt(document.getElementById("txt-offset").value);
-  decodeText = document.getElementById("txt-encrypted").value;
-  if (offset) {
-    document.getElementById("danger-offset").style.display = "none";
-    if (decodeText) {
-      document.getElementById("danger-text").style.display = "none";
-      document.getElementById("result").innerHTML = cipher.decode(offset, decodeText);
-    } else {
-      document.getElementById("danger-text").style.display = "block";
-    }
-  } else {
-    document.getElementById("danger-offset").style.display = "block";
-  }
+btnDecrypted.addEventListener('click', () => {
+  const offset = parseInt(txtOffset.value);
+  const text = txtToEncrypt.value;
+  const haveOffset = verifiedOffset(offset);
+  const haveText = verifiedText(text);
+  if (haveOffset && haveText) txtResult.innerHTML = cipher.decode(offset, text);
 });
 
-document.getElementById("copy").addEventListener("click", () => {
-  let aux = document.createElement("input");
-  aux.setAttribute("value", document.getElementById("result").innerHTML);
+btnClear.addEventListener('click', () => {
+  helperOffset.style.display = 'none';
+  helperText.style.display = 'none';
+  txtToEncrypt.value = '';
+  txtResult.innerHTML = '';
+});
+
+btnCopy.addEventListener('click', () => {
+  const aux = document.createElement('input');
+  aux.setAttribute('value', txtResult.innerHTML);
   document.body.appendChild(aux);
   aux.select();
-  document.execCommand("copy");
+  document.execCommand('copy');
   document.body.removeChild(aux);
-  document.getElementById("result").select();
-})
-
-document.getElementById("clear").addEventListener("click", () => {
-  document.getElementById("danger-offset").style.display = "none";
-  document.getElementById("danger-text").style.display = "none";
-  document.getElementById("txt-offset").value = "";
-  document.getElementById("txt-encrypted").value = "";
-  document.getElementById("result").innerHTML = "";
+  txtResult.select();
 });
